@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 table, th, td {
   border: 1px solid;
 }
-
+p {
+  margin: 4px 0;
+}
 button {
   border: none;
   font-size: 16px;
@@ -78,6 +80,9 @@ p {
 
   padding: 15px 10px 30px;
   margin: 0 auto;
+
+  transition: all .5s linear;
+
 }
 
 /* Card */
@@ -171,7 +176,7 @@ p {
 
   padding: 6px 3px;
 
-  color: #ffffff;
+  color: #fff;
   font-size: 15px;
   font-family: inherit;
 
@@ -199,11 +204,34 @@ p {
 
   width: 150px;
 
+  color: #3a3a3a;
   font-size: 17px;
   line-height: 1.5;
 
   cursor: pointer;
 
-  background-color: #a61212;
+  background-color: #fff;
   border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 780px;
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .about__main-info {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+  .about__image {
+    margin: 0 auto;
+  }
 }
